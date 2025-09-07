@@ -9,9 +9,13 @@ st.header('st.write')
 
 st.write('Hello, *World!* :sunglasses:')
 
+'Hello, *World!* :sunglasses:'
+
 #例2
 
 st.write(1234)
+
+1234
 
 #例3
 
@@ -25,6 +29,9 @@ st.write(df)
 
 st.write('Below is a DataFrame:', df, 'Above is a dataframe.')
 
+
+'Below is a DataFrame:', df, 'Above is a dataframe.'
+
 #例5
 
 df2 = pd.DataFrame(
@@ -33,3 +40,5 @@ df2 = pd.DataFrame(
 c = alt.Chart(df2).mark_circle().encode(
      x='a', y='b', size='c', color='c', tooltip=['a', 'b', 'c'])
 st.write(c)
+
+c
