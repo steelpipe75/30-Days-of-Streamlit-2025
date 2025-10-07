@@ -20,12 +20,12 @@ with c2:
     st.write(suggested_activity)
 
 st.header('Suggested activity')
-st.info(suggested_activity['activity'])
+st.info(suggested_activity[0]['activity'])
 
 col1, col2, col3 = st.columns(3)
 with col1:
-  st.metric(label='Number of Participants', value=suggested_activity['participants'], delta='')
+  st.metric(label='Number of Participants', value=suggested_activity[0]['participants'], delta='')
 with col2:
-  st.metric(label='Type of Activity', value=suggested_activity['type'].capitalize(), delta='')
+  st.metric(label='Type of Activity', value=suggested_activity[0]['type'].capitalize(), delta='')
 with col3:
-  st.metric(label='Price', value=suggested_activity['price'], delta='')
+  st.metric(label='Price', value=suggested_activity[0]['price'], delta='')
