@@ -1,3 +1,5 @@
 streamlit
 ydata-profiling
-streamlit-ydata-profiling
+# streamlit-ydata-profiling
+streamlit-shap
+xgboost
