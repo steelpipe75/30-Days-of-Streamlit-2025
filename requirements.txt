@@ -1,5 +1,6 @@
 streamlit
 ydata-profiling
 # streamlit-ydata-profiling
-streamlit-shap
-xgboost
+# streamlit-shap
+# xgboost
+streamlit-elements==0.1.*
