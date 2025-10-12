@@ -1,6 +1,9 @@
 streamlit
-ydata-profiling
+# ydata-profiling
 # streamlit-ydata-profiling
 # streamlit-shap
 # xgboost
-streamlit-elements==0.1.*
+# streamlit-elements==0.1.*
+streamlit-tags
+streamlit-aggrid
+streamlit-option-menu
