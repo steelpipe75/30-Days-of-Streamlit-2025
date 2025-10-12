@@ -23,6 +23,9 @@ from st_aggrid import GridUpdateMode, DataReturnMode
 from dashboard_utils.gui import keyboard_to_url
 from dashboard_utils.gui import load_keyboard_class
 
+import os # add
+base_path = os.path.dirname(__file__) # add
+
 #######################################################
 
 # The code below is to control the layout width of the app.
@@ -56,7 +59,8 @@ c1, c2 = st.columns([0.4, 2])
 with c1:
 
     st.image(
-        "logo.png",
+        # "logo.png",
+        os.path.join(base_path, "logo.png"),
         width=110,
     )
 
@@ -67,7 +71,8 @@ with c2:
 
 
 st.sidebar.image(
-    "30days_logo.png",
+    # "30days_logo.png",
+    os.path.join(base_path, "30days_logo.png"),
 )
 
 st.write("")
