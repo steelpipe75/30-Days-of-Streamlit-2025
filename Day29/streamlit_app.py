@@ -326,7 +326,8 @@ if selected == "Demo (5 phrases max)":
 
         with cs:
 
-            @st.cache
+            # @st.cache
+            @st.cache_data
             def convert_df(df):
                 # IMPORTANT: Cache the conversion to prevent computation on every rerun
                 return df.to_csv().encode("utf-8")
@@ -510,7 +511,8 @@ elif selected == "Unlocked Mode":
 
             with cs:
 
-                @st.cache
+                # @st.cache
+                @st.cache_data
                 def convert_df(df):
                     # IMPORTANT: Cache the conversion to prevent computation on every rerun
                     return df.to_csv().encode("utf-8")
